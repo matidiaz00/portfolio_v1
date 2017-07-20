@@ -1,0 +1,53 @@
+/* ==========================================================================
+   ASIDE LEFT
+   ========================================================================== */
+
+footer {
+    background-color: #309a67;
+    text-align: center;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+footer h1 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+footer h1,
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#footerbtn {
+    border: solid 3px #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#footerbtn:hover {
+    color: #309a67;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   QUERIES
+   ========================================================================== */
+
+@media all and (max-width: 480px) {
+    footer h1,
+    footer a,
+    #footerbtn {
+        font-size: 12px;
+    }
+}

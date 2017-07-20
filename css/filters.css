@@ -1,0 +1,106 @@
+/* ==========================================================================
+   FILTERS
+   ========================================================================== */
+
+#nav_filters {
+    margin: 40px 20px 0;
+    text-align: right;
+}
+#nav_filters p {
+    margin: 0;
+    color: #a7a8aa;
+    font-size: 12px;
+    font-style: italic;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width:-moz-calc(100% - 425px);
+    width: calc(100% - 425px);
+}
+#nav_filters nav {
+    display: inline-block;
+    text-align: right;
+}
+#nav_filters a {
+    background-color: #d2d3d7;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#nav_filters a:hover,
+#nav_filters a.active {
+    background-color: #339967;
+}
+#filters {
+    margin: 0 0 20px;
+    padding: 0;
+}
+#filters a {
+    width:-moz-calc(33.334% - 40px);
+    width: calc(33.334% - 40px);
+    margin: 20px;
+}
+#filters img {
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#filters img:hover {
+    opacity: 0.8;
+}
+#templo-logo {
+    background-color: #a7875e;
+}
+#kadampa-logo {
+    background-color: #61aedd;
+}
+#kadampa_mailchimp-logo {
+    background-color: #e85c41;
+}
+#w3americas-logo {
+    background-color: #ec5028;
+}
+/* CSS para el plugin de filtros*/
+#filters .mix {
+    display: none;
+}
+
+/* ==========================================================================
+   QUERIES
+   ========================================================================== */
+
+@media all and (max-width: 1000px) {
+    #nav_filters {
+        margin-top: 35px;
+    }
+}
+@media all and (max-width: 790px) {
+    #nav_filters p {
+        text-align: center;
+        width: 100%;
+    }
+    #nav_filters nav {
+        display: none;
+    }
+}
+@media all and (max-width: 737px) {
+    #filters a {
+        width:-moz-calc(100% - 40px);
+        width: calc(50% - 40px);
+    }
+}
+@media all and (max-width: 400px) {
+    #filters a {
+        width:-moz-calc(100% - 40px);
+        width: calc(100% - 40px);
+    }
+}

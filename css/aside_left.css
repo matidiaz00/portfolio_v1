@@ -1,0 +1,94 @@
+/* ==========================================================================
+   ASIDE LEFT
+   ========================================================================== */
+#aside_left {
+    width: 120px;
+    position: fixed;
+    margin-top: 40px;
+}
+#matidiaz_logo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    font-size: 0;
+    background-image: url(../img/matidiaz-logo.png);
+    margin: 0 5px 15px;
+    background-color: #339967;
+}
+#aside_left nav {
+    text-align: right;
+}
+#aside_left nav a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/social-icons.png);
+    font-size: 0;
+    line-height: 32px;
+    margin: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#aside_left nav a:hover {
+    opacity: 0.8;
+}
+#icon-lk {
+    background-position: 0 0;
+    background-color: #90cadd;
+}
+#icon-bh {
+    background-position: 0 -30px;
+    background-color: #1aace3;
+}
+#icon-fb {
+    background-position: 0 -60px;
+    background-color: #507cbe;
+}
+#icon-yt {
+    background-position: 0 -90px;
+    background-color: #f16261;
+}
+#icon-in {
+    background-position: 0 -120px;
+    background-color: #cdcccc;
+}
+#icon-tb {
+    background-position: 0 -150px;
+    background-color: #4d7ea3;
+}
+#icon-sc {
+    background-position: 0 -180px;
+    background-color: #e85c41;
+}
+
+/* ==========================================================================
+   QUERIES
+   ========================================================================== */
+
+@media all and (max-width: 1000px) {
+    #aside_left {
+        width: auto;
+        position: relative;
+        overflow: hidden;
+        margin: 35px 20px 0;
+    }
+    #matidiaz_logo {
+        float: right;
+        margin: 5px 0 0 15px;
+    }
+    #aside_left nav {
+        float: right;
+        width: 120px;
+    }
+}
+@media all and (max-width: 342px) {
+    #matidiaz_logo {
+        float: none;
+        margin: 0 auto;
+    }
+    #aside_left nav {
+        display: none;
+    }
+}

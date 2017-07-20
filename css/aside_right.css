@@ -1,0 +1,82 @@
+/* ==========================================================================
+   ASIDE RIGHT
+   ========================================================================== */
+
+#aside_right {
+    width: 300px;
+    margin: 0 20px;
+    float: right;
+}
+#wrapper_asideright {
+    position: fixed;
+    width: 300px;
+}
+#url_date {
+    text-align: center;
+}
+#url_date a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+#url_date a:hover {
+    text-decoration: underline;
+}
+#url_date p,
+#info p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+}
+#url_date,
+#info,
+#btn_behance {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#btn_behance {
+    padding: 0;
+    overflow: hidden;
+}
+#btn_behance a {
+    background-image: url(../img/social-icons.png);
+    background-repeat: no-repeat;
+    background-position: right -30px;
+    background-color: #1aace3;
+    float: right;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+#btn_behance a:hover {
+    opacity: 0.8;
+}
+
+/* ==========================================================================
+   QUERIES
+   ========================================================================== */
+   
+@media all and (max-width: 1000px) {
+    #wrapper_asideright {
+        position: relative;
+        width: auto;
+    }
+}
+@media all and (max-width: 737px) {
+    #aside_right {
+        width: auto;
+        float: none;
+    }
+    #aside_right nav {
+        display: none;
+    }
+}
+@media all and (max-width: 480px) {
+    #aside_right #url_date a {
+        font-size: 12px;
+    }
+    #info,
+    #url_date p {
+        display: none;
+    }
+}
